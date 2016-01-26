@@ -16,10 +16,12 @@
 
     ls -RlhS
 
--R: recursive
--l: long listing
--h: human readable file sizes
--S: sort by file size
+Option | Effect
+-------|---------------------------
+-R     | recursive
+-l     | long listing
+-h     | human readable file sizes
+-S     | sort by file size
 
 ## Find largest file recursively
 

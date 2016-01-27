@@ -23,6 +23,10 @@ Option | Effect
 `-h`   | human readable file sizes
 `-S`   | sort by file size
 
+Pipe output to `tail` to see only the top ten results:
+
+    ls -RlhS | tail
+
 ## Find largest file recursively
 
     sudo find /path/to/search/ -size +15M -printf "%s - %p\n" | sort -n | tail

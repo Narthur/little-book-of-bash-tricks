@@ -14,20 +14,19 @@
 
 ## Find largest files
 
-### Using `ls`
+### In single directory
 
-    ls -RlhS
+    ls -lhS
 
 Option | Effect
 -------|---------------------------
-`-R`   | recursive
 `-l`   | long listing
 `-h`   | human readable file sizes
 `-S`   | sort by file size
 
 Pipe output to `tail` to see only the top ten results:
 
-    ls -RlhS | tail
+    ls -lhS | tail
 
 Advantages:
 
@@ -35,10 +34,11 @@ Advantages:
 - Elegant.
 - Outputs human-readable size.
 
-### Using `find`
+### Recursively
 
     sudo find /path/to/search/ -size +15M -printf "%s - %p\n" | sort -n | tail
 
 Advantages:
 
 - Outputs path to each file.
+- Correctly sorts files while doing a full recursive search.

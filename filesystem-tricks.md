@@ -12,7 +12,9 @@
     
 [Source](http://www.unixtutorial.org/2008/06/how-to-compare-directories-in-unix/)
 
-## Sort contents by file size recursively
+## Find largest files
+
+### Using `ls`
 
     ls -RlhS
 
@@ -27,6 +29,16 @@ Pipe output to `tail` to see only the top ten results:
 
     ls -RlhS | tail
 
-## Find largest file recursively
+Advantages:
+
+- Incredibly fast.
+- Elegant.
+- Outputs human-readable size.
+
+### Using `find`
 
     sudo find /path/to/search/ -size +15M -printf "%s - %p\n" | sort -n | tail
+
+Advantages:
+
+- Outputs path to each file.

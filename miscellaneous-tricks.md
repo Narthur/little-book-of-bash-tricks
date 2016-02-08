@@ -18,3 +18,5 @@ To stop stopwatch:
 ## Search file contents recursively
 
     grep -r "needle" /path/to/search/
+
+[Source](http://www.cyberciti.biz/faq/howto-use-grep-command-in-linux-unix/)

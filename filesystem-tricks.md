@@ -48,3 +48,9 @@ Advantages:
 
 - Outputs path to each file.
 - Correctly sorts files while doing a full recursive search.
+
+## Count files in a folder
+
+    ls -1 | wc -l
+
+[Source](http://tldp.org/HOWTO/Bash-Prompt-HOWTO/x700.html)
